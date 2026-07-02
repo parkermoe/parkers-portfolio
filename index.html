@@ -1,713 +1,549 @@
 <!DOCTYPE html>
-<html data-bs-theme="light" lang="en">
+<html lang="en" data-theme="dark">
 
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>Home - Parker Portfolio V2</title>
-    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700&amp;display=swap">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic&amp;display=swap">
-    <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
-    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
-    <link rel="stylesheet" href="assets/fonts/fontawesome5-overrides.min.css">
-    <link rel="stylesheet" href="assets/css/aos.min.css">
-    <link rel="stylesheet" href="assets/css/untitled-1.css">
-    <link rel="stylesheet" href="assets/css/untitled-2.css">
-    <link rel="stylesheet" href="assets/css/untitled-3.css">
-    <link rel="stylesheet" href="assets/css/untitled-4.css">
-    <link rel="stylesheet" href="assets/css/untitled-5.css">
-    <link rel="stylesheet" href="assets/css/untitled.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parker Moesta — Senior Machine Learning Scientist</title>
+    <meta name="description" content="Parker Moesta is a Senior Machine Learning Scientist building recommender systems, feature platforms, and low-latency ML serving for large-scale eCommerce personalization — with $100M+ in measured incremental revenue.">
+    <link rel="canonical" href="https://www.parkermoesta.ai/">
+    <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.parkermoesta.ai/">
+    <meta property="og:title" content="Parker Moesta — Senior Machine Learning Scientist">
+    <meta property="og:description" content="Recommender systems, feature platforms, and low-latency ML serving for large-scale personalization. ML tied to $100M+ in measured incremental revenue.">
+    <meta property="og:image" content="https://www.parkermoesta.ai/assets/img/og-image.png">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <link rel="preload" href="assets/fonts/fraunces.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="assets/fonts/inter.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="assets/css/fonts.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Parker Moesta",
+      "jobTitle": "Senior Machine Learning Scientist",
+      "worksFor": { "@type": "Organization", "name": "Domino's" },
+      "url": "https://www.parkermoesta.ai/",
+      "email": "mailto:parkermoesta@gmail.com",
+      "address": { "@type": "PostalAddress", "addressLocality": "Ann Arbor", "addressRegion": "MI" },
+      "alumniOf": { "@type": "CollegeOrUniversity", "name": "University of Michigan" },
+      "sameAs": [
+        "https://github.com/DimensionDweller",
+        "https://www.linkedin.com/in/parker-moesta/",
+        "https://medium.com/@parkermo_86729",
+        "https://www.kaggle.com/parkermoesta"
+      ]
+    }
+    </script>
 </head>
 
-<body id="page-top" data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-offset="72" style="margin: 0px;">
-    <nav class="navbar navbar-expand-lg fixed-top bg-secondary text-uppercase navbar-light" id="mainNav" style="padding: 23px 8px;margin: 0;">
-        <div class="container-fluid"><a class="navbar-brand" href="#page-top">Parker Moesta</a><button class="navbar-toggler text-white bg-primary navbar-toggler-right text-uppercase rounded" data-bs-toggle="collapse" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation" data-bs-target="#navbarResponsive"></button><div id="navbarResponsive" class="collapse navbar-collapse">
-    <a href="https://github.com/DimensionDweller" target="_blank" rel="noopener noreferrer"><i class="fa fa-github text-light" style="font-size: 24px;"></i></a>
-    <a href="https://medium.com/@parkermo_86729" target="_blank" rel="noopener noreferrer"><i class="fa fa-medium text-light" style="font-size: 24px;"></i></a>
-    <a href="https://www.linkedin.com/in/parker-moesta/" target="_blank" rel="noopener noreferrer"><i class="fa fa-linkedin-square text-light" style="font-size: 24px;"></i></a>
-    <a href="https://www.kaggle.com/parkermoesta" target="_blank" rel="noopener noreferrer">
-        <i class="fab fa-kaggle text-light" style="font-size: 24px;"></i>
-    </a>
-    <ul class="navbar-nav ms-auto">
-        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link active py-3 px-0 px-lg-3 rounded" href="#portfolio">Portfolio</a></li>
-        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link active py-3 px-0 px-lg-3 rounded" href="#about">About</a></li>
-        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link active py-3 px-0 px-lg-3 rounded" href="#contact">Contact</a></li>
-    </ul>
-</div></div>
-    </nav><script src="assets/js/aos.js"></script>
-<script type="text/javascript" async
-    src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
-</script>
+<body>
+    <a class="skip-link" href="#work">Skip to content</a>
 
+    <header class="site-nav" id="top">
+        <nav aria-label="Main">
+            <a class="brand" href="#top">
+                <svg class="brand-mark" viewBox="0 0 64 64" aria-hidden="true"><path d="M8 46 L22 26 L30 37 L40 20 L56 46 Z" fill="var(--accent-deep)"/><path d="M20 52 L26 40 L32 52 Z M30 54 L38 38 L46 54 Z" fill="var(--accent)"/></svg>
+                Parker Moesta
+            </a>
+            <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Menu">
+                <span></span><span></span><span></span>
+            </button>
+            <div class="nav-menu" id="nav-menu">
+                <a href="#work">Work</a>
+                <a href="#journey">Journey</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+                <div class="nav-social">
+                    <a href="https://github.com/DimensionDweller" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.55v-2.15c-3.2.7-3.87-1.36-3.87-1.36-.52-1.33-1.28-1.68-1.28-1.68-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.19 1.76 1.19 1.03 1.75 2.69 1.25 3.34.95.1-.74.4-1.25.72-1.53-2.55-.29-5.23-1.28-5.23-5.68 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.78 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.83 1.19 3.09 0 4.41-2.69 5.38-5.25 5.67.41.35.77 1.04.77 2.1v3.12c0 .3.21.66.8.55A11.51 11.51 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5Z"/></svg>
+                    </a>
+                    <a href="https://www.linkedin.com/in/parker-moesta/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.47-.9 1.63-1.85 3.36-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29ZM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12ZM7.12 20.45H3.56V9h3.56v11.45Z"/></svg>
+                    </a>
+                    <a href="https://medium.com/@parkermo_86729" target="_blank" rel="noopener noreferrer" aria-label="Medium">
+                        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M13.54 12a6.8 6.8 0 0 1-6.77 6.82A6.8 6.8 0 0 1 0 12a6.8 6.8 0 0 1 6.77-6.82A6.8 6.8 0 0 1 13.54 12Zm7.42 0c0 3.54-1.51 6.42-3.38 6.42-1.87 0-3.39-2.88-3.39-6.42s1.52-6.42 3.39-6.42 3.38 2.88 3.38 6.42Zm3.04 0c0 3.17-.53 5.75-1.19 5.75-.66 0-1.19-2.58-1.19-5.75s.53-5.75 1.19-5.75c.66 0 1.19 2.58 1.19 5.75Z"/></svg>
+                    </a>
+                    <a href="https://www.kaggle.com/parkermoesta" target="_blank" rel="noopener noreferrer" aria-label="Kaggle">
+                        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.83 23.6c-.02.08-.1.13-.23.13h-2.72c-.15 0-.28-.07-.4-.2l-4.49-5.69-1.25 1.19v4.32c0 .25-.13.38-.38.38H7.24c-.25 0-.38-.13-.38-.38V.65c0-.25.13-.38.38-.38h2.12c.25 0 .38.13.38.38v13.5l5.35-5.42c.13-.13.26-.19.41-.19h2.82c.11 0 .19.05.22.14.03.1.01.18-.05.24l-5.66 5.47 5.96 8.94c.06.08.07.17.04.27Z"/></svg>
+                    </a>
+                </div>
+                <button class="theme-toggle" aria-label="Switch to light theme" title="Toggle theme">
+                    <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79Z"/></svg>
+                    <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="5"/><path d="M12 1v3M12 20v3M4.22 4.22l2.12 2.12M17.66 17.66l2.12 2.12M1 12h3M20 12h3M4.22 19.78l2.12-2.12M17.66 6.34l2.12-2.12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+                </button>
+            </div>
+        </nav>
+    </header>
 
-    <header class="text-center text-white bg-primary masthead" style="margin: 0px;"><div class="image-container">
-    <img src="assets/img/ju7a_b56z_180801.jpg" style="width: 100%; height: auto; margin: 0; padding: 0;" />
-    <div class="overlay-text" id="rotating-text"></div>
-
-</div>
-        <div class="container">
-            <h1 class="fs-1" style="padding: 0;margin: 40px;">Portfolio</h1>
-            <hr class="star-light">
-            <h2 class="font-weight-light mb-0">Classical ML - Generative Models - Computer Vision - NLP&nbsp;</h2>
-        </div>
-    </header><section id="Project-Highlights" class="portfolio">
-    <div class="container">
-        <h2 class="text-uppercase text-center text-secondary">Projects</h2>
-        <hr class="star-dark mb-5" />
-        <div class="row">
-            <div class="col-md-6 col-lg-4"><a class="d-block mx-auto portfolio-item" href="#portfolio-modal-1" data-bs-toggle="modal"><sub class="fs-6 mt-xl-3 mb-xl-3"><div class="project-title">Neural Style Transfer Implementation</div></sub>
-                    <div class="d-flex portfolio-item-caption position-absolute h-100 w-100">
-                        <div class="text-center text-white my-auto portfolio-item-caption-content w-100"><i class="fa fa-search-plus fa-3x"></i></div>
-                    </div><img class="img-fluid my-custom-class" src="assets/img/Teddy_NST.png" width="350" height="350" />
-                </a></div>
-            <div class="col-md-6 col-lg-4"><a class="d-block mx-auto portfolio-item" href="#portfolio-modal-2" data-bs-toggle="modal"><sub class="fs-6 mt-xl-4 mb-xl-4"><div class="project-title">Novel Face Generation - VAE Implementation</div></sub>
-                    <div class="d-flex portfolio-item-caption position-absolute h-100 w-100">
-                        <div class="text-center text-white my-auto portfolio-item-caption-content w-100"><i class="fa fa-search-plus fa-3x"></i></div>
-                    </div><img class="img-fluid my-custom-class" src="assets/img/VAE_Faces.png" />
-                </a></div>
-            <div class="col-md-6 col-lg-4"><a class="d-block mx-auto portfolio-item" href="#portfolio-modal-3" data-bs-toggle="modal"><sub class="fs-6 mt-xl-4 mb-xl-4"><span style="color: rgb(0, 0, 0); background-color: rgb(255, 255, 255);">Investigating The Relationship Between Climate-Related Financing and The Decoupling of CO2 Emissions &amp; Economic Development</span></sub>
-                    <div class="d-flex portfolio-item-caption position-absolute h-100 w-100">
-                        <div class="text-center text-white my-auto portfolio-item-caption-content w-100"><i class="fa fa-search-plus fa-3x"></i></div>
-                    </div><img class="img-fluid my-custom-class" src="assets/img/GDPGrowth.png" />
-                </a></div>
-        </div>
-    </div>
-</section><section id="nlp-section" class="portfolio">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-6 col-lg-4"><a class="d-block mx-auto portfolio-item" href="#portfolio-modal-9" data-bs-toggle="modal"><div class="project-title">LSTM Implimentation: Novel Recipe Generator</div>
-                    <div class="d-flex portfolio-item-caption position-absolute h-100 w-100">
-                        <div class="text-center text-white my-auto portfolio-item-caption-content w-100"><i class="fa fa-search-plus fa-3x"></i></div>
-                    </div><img class="img-fluid my-custom-class-2" src="assets/img/portfolio/Generative%20Models/lstm_arch.png" width="350" height="350" />
-                </a></div>
-            <div class="col-md-6 col-lg-4"><a class="d-block mx-auto portfolio-item" href="#portfolio-modal-10" data-bs-toggle="modal"><sub class="fs-6 mt-xl-4 mb-xl-4"><div class="project-title"> Conditional Wasserstein GAN with Gradient Penalty (WGAN-GP)</div></sub>
-                    <div class="d-flex portfolio-item-caption position-absolute h-100 w-100">
-                        <div class="text-center text-white my-auto portfolio-item-caption-content w-100"><i class="fa fa-search-plus fa-3x"></i></div>
-                    </div><img class="img-fluid my-custom-class-2" src="assets/img/portfolio/Generative%20Models/GAN_Arch.png" width="350" height="350" />
-                </a></div>
-            <div class="col-md-6 col-lg-4">
-    <a class="d-block mx-auto portfolio-item" href="#portfolio-modal-11" data-bs-toggle="modal">
-        <div class="fs-6 mt-xl-4 mb-xl-4">
-            <div class="project-title">PyTorch Research Network Dynamics: A Citation and Co-authorship Analysis</div>
-        </div>
-        <div class="d-flex portfolio-item-caption position-absolute h-100 w-100">
-            <div class="text-center text-white my-auto portfolio-item-caption-content w-100"><i class="fa fa-search-plus fa-3x"></i></div>
-        </div>
-        <img class="img-fluid my-custom-class" src="assets/img/Pytorch%20References%20Network%20Full.png"  />
-    </a>
-</div>
-        </div>
-    </div>
-</section><section id="nlp-section" class="portfolio">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-6 col-lg-4">
-                <a class="d-block mx-auto portfolio-item" href="#portfolio-modal-6" data-bs-toggle="modal">
-                    <div class="project-title">Beautiful Soup + BERT: Sentiment Analysis of News Articles</div>
-                    <div class="d-flex portfolio-item-caption position-absolute h-100 w-100">
-                        <div class="text-center text-white my-auto portfolio-item-caption-content w-100"><i class="fa fa-search-plus fa-3x"></i></div>
-                    </div><img class="img-fluid my-custom-class" src="assets/img/portfolio/NLP/Word_cloud_news.png" width="350" height="350" />
-                </a></div>
-            <div class="col-md-6 col-lg-4"><a class="d-block mx-auto portfolio-item" href="#portfolio-modal-7" data-bs-toggle="modal"><sub class="fs-6 mt-xl-4 mb-xl-4"><div class="project-title">News Source Classifer: Deep Learning Approach</div></sub>
-                    <div class="d-flex portfolio-item-caption position-absolute h-100 w-100">
-                        <div class="text-center text-white my-auto portfolio-item-caption-content w-100"><i class="fa fa-search-plus fa-3x"></i></div>
-                    </div><img class="img-fluid my-custom-class" src="assets/img/portfolio/NLP/acc_news_classifier.png" width="350" height="350" />
-                </a></div>
-            <div class="col-md-6 col-lg-4">
-    <a class="d-block mx-auto portfolio-item" href="#portfolio-modal-5" data-bs-toggle="modal">
-        <div class="fs-6 mt-xl-4 mb-xl-4">
-            <div class="project-title">Word2Vec + t-SNE = Semantic Analysis of Word Embeddings from News Sources</div>
-        </div>
-        <div class="d-flex portfolio-item-caption position-absolute h-80 w-100">
-            <div class="text-center text-white my-auto portfolio-item-caption-content w-100"><i class="fa fa-search-plus fa-3x"></i></div>
-        </div>
-        <img class="img-fluid my-custom-class" src="assets/img/portfolio/NLP/embeddings_init.png"  />
-    </a>
-</div>
-        </div>
-    </div>
-</section><section id="nlp-section" class="portfolio">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-6 col-lg-4"><a class="d-block mx-auto portfolio-item" href="#portfolio-modal-12" data-bs-toggle="modal"><div class="project-title">pix2pix: Restoring Color in Historical Black and White images using Image-to-Image Translation </div>
-                    <div class="d-flex portfolio-item-caption position-absolute h-100 w-100">
-                        <div class="text-center text-white my-auto portfolio-item-caption-content w-100"><i class="fa fa-search-plus fa-3x"></i></div>
-                    </div><img class="img-fluid my-custom-class-2" src="assets/img/color_house_gen.png" width="400" height="350" />
-                </a></div>
-            <div class="col-md-6 col-lg-4"><a class="d-block mx-auto portfolio-item" href="#portfolio-modal-13" data-bs-toggle="modal"><sub class="fs-6 mt-xl-4 mb-xl-4"><div class="project-title"> Apple Watch + Photo Metadata: Visual Journey Through The Mountains</div></sub>
-                    <div class="d-flex portfolio-item-caption position-absolute h-100 w-100">
-                        <div class="text-center text-white my-auto portfolio-item-caption-content w-100"><i class="fa fa-search-plus fa-3x"></i></div>
-                    </div><img class="img-fluid my-custom-class-2" src="assets/img/moutain_viz.png" width="400" height="400" />
-                </a></div>
-            <div class="col-md-6 col-lg-4">
-    <a class="d-block mx-auto portfolio-item" href="#portfolio-modal-5" data-bs-toggle="modal">
-        <div class="fs-6 mt-xl-4 mb-xl-4">
-            <div class="project-title">Steam Game Recommendation System Using Neural Collaborative Filtering</div>
-        </div>
-        <div class="d-flex portfolio-item-caption position-absolute h-100 w-100">
-            <div class="text-center text-white my-auto portfolio-item-caption-content w-100"><i class="fa fa-search-plus fa-3x"></i></div>
-        </div>
-        <img class="img-fluid my-custom-class" src="assets/img/The-overall-framework-of-Neural-Collaborative-Filtering12_W640.jpg"  />
-        
-    </a>
-</div>
-        </div>
-    </div>
-     <hr class="star-dark mb-5" />
-</section>
-    <section class="text-white bg-primary mb-0" id="about"><!-- Image and Description Section -->
-<div class="container d-flex align-items-center">
-    <!-- Image Section -->
-    <div class="about-image">
-        <img width="500" height="500" src="assets/img/Profile%20Image.png" style="margin: 52px;" />
-    </div>
-    <!-- Description Section -->
-    <div class="about-description d-flex">
-        <div class="bio">
-            <h3 class="section-title">Bio</h3>
-            <p>I am an MSc Data Science student studying under Prof Paul Resnick as my program advisor at the University of Michigan, currently residing in Ann Arbor but originally from Detroit, Michigan. After earning a degree in Economics at the same institution, I embarked on a journey through the tech industry, working for Oracle, the supply chain optimization startup LLamasoft, and now as an Operations Analyst at Coupa Software as I complete my MSc.</p>
-            <p>My research and professional interests lie in the areas of Classical ML, Generative Models, Computer Vision, and Natural Language Processing (NLP). The convergence of these domains drives my passion for exploring innovative solutions and contributing to the field of artificial intelligence.</p>
-        </div>
-        <div class="education-work">
-            <h3 class="section-title">Education + Experience</h3>
-            <ul>
-                <li>MSc Data Science, University of Michigan</li>
-                <li>MSBA, University of Michigan</li>
-                <li>BS Economics, University of Michigan</li>
-                <li>Operations Analyst, Coupa Software</li>
-                <li>Technial Account Manager, LLamasoft</li>
-                <li>Technial Account Manager, Oracle</li>
-                <!-- Add more items as needed -->
-            </ul>
-        </div>
-    </div>
-</div>
-
-
-        <div class="container" data-aos="fade">
-            <h2 class="text-uppercase text-center text-white" style="padding: 73px;margin-bottom: -57px;">About me Timeline</h2>
-            <hr class="star-light mb-5" style="padding: -4px;"><div class="timeline">
-    <div class="timeline-event-container" data-aos="fade-up">
-        <div class="timeline-line"></div>
-        <div class="timeline-event left">
-            <div class="timeline-dot left">
-                <span class="year">1991</span>
-            </div>
-            <div class="content left">
-                <h3 class="section-title">1991</h3>
-                <p class="lead">Born &amp; and raised in Detriot, MI.</p>
-            </div>
-        </div>
-    <div class="timeline-event" data-aos="fade-up">
-        <div class="timeline-event right">
-            <div class="timeline-dot left">
-                <span class="year">2005</span>
-            </div>
-            <div class="content right">
-                <h3 class="section-title">2005</h3>
-                <p class="lead">Discovered my passion for Mathematics &amp; Statistics. </p>
-                <p>  In mathematical terms, you could say:</p>
-                <p>\( \cos(\theta_{\rho, \mu}) \approx \cos(\theta_{\rho, \sigma}) \approx 1 \), where</p>
-                <p class="lead">\( \rho = \text{Me} \)</p>
-                <p class="lead">\( \mu = \text{Mathematics} \)</p>
-                <p class="lead">\( \sigma = \text{Statistics} \)</p>
-
-            </div>
-        </div>
-    <div class="timeline-event" data-aos="fade-up">
-        <div class="timeline-event left">
-            <div class="timeline-dot left">
-                <span class="year">2011</span>
-            </div>
-            <div class="content left">
-                <h3 class="section-title">2011</h3>
-                <p class="lead">Started College &amp; was inducted into the Honor Society</p>
-            </div>
-        </div>
-    <div class="timeline-event" data-aos="fade-up">
-        <div class="timeline-event right">
-            <div class="timeline-dot left">
-                <span class="year">2014</span>
-            </div>
-            <div class="content right">
-                <h3 class="section-title">2014</h3>
-                <p class="lead">Transfered to the University of Michigan on a full ride. </p>
-                  <p> Declared Economics as my Major</p>
-            </div>
-        </div>
-    <!-- ... More Years ... -->
-    <div class="timeline-event" data-aos="fade-up">
-        <div class="timeline-event left">
-            <div class="timeline-dot left">
-                <span class="year">2016</span>
-            </div>
-            <div class="content left">
-                <h3 class="section-title">2016</h3>
-                <p class="lead">Finished Undergrad.</p>
-                <p> Joined Oracle &amp; moved to Boston </p>
-            </div>
-        </div>
-    <div class="timeline-event" data-aos="fade-up">
-        <div class="timeline-event right">
-            <div class="timeline-dot left">
-                <span class="year">2017</span>
-            </div>
-            <div class="content right">
-                <h3 class="section-title">2017</h3>
-                <p class="lead">Graduated Oracle Academy &amp; recieved promotion</p>
-                <p> Realized I wanted to return to School </p>
-            </div>
-        </div>
-    <div class="timeline-event" data-aos="fade-up">
-        <div class="timeline-event left">
-            <div class="timeline-dot left">
-                <span class="year">2018</span>
-            </div>
-            <div class="content left">
-                <h3 class="section-title">2018</h3>
-                <p class="lead">Moved back to Michigan &amp; joined LLamasoft</p>
-                <p> Began studying for the GRE &amp; learning Python </p>
-            </div>
-        </div>
-    <div class="timeline-event" data-aos="fade-up">
-        <div class="timeline-event right">
-            <div class="timeline-dot left">
-                <span class="year">2019</span>
-            </div>
-            <div class="content right">
-                <h3 class="section-title">2019</h3>
-                <p class="lead">Accepted into MSc. Business Analytics Program</p>
-                <p> University of Michigan </p>
-            </div>
-        </div>
-    <div class="timeline-event" data-aos="fade-up">
-        <div class="timeline-event left">
-            <div class="timeline-dot left">
-                <span class="year">2020</span>
-            </div>
-            <div class="content left">
-                <h3 class="section-title">2020</h3>
-                <p class="lead">Group Research Project was Published</p>
-                <p> Publication: Simulation Improves Service and Operations at a Franchise Resale Store </p>
-                <p><a href="https://www.researchgate.net/publication/355938481_Simulation_Improves_Service_and_Operations_at_a_Franchise_Resale_Store" target="_blank" style="color: white; font-weight: bold;">Read the publication</a></p>
-
-            </div>
-        </div>
-    <div class="timeline-event" data-aos="fade-up">
-        <div class="timeline-event right">
-            <div class="timeline-dot left">
-                <span class="year">2021</span>
-            </div>
-            <div class="content right">
-                <h3 class="section-title">2021</h3>
-                <p class="lead">Transfered to MSc. Data Science Program</p>
-                <p> University of Michigan - School of Information </p>
-            </div>
-        </div>
-    <div class="timeline-event" data-aos="fade-up">
-        <div class="timeline-event left">
-            <div class="timeline-dot left">
-                <span class="year">2022</span>
-            </div>
-            <div class="content left">
-                <h3 class="section-title">2022</h3>
-                <p class="lead">Began Deep Learning Research</p>
-                <p> Computer Vision, NLP, Generative Models </p>
-            </div>
-        </div>
-    <div class="timeline-event" data-aos="fade-up">
-        <div class="timeline-event right">
-            <div class="timeline-dot left">
-                <span class="year">2023</span>
-            </div>
-            <div class="content right">
-                <p class="lead">Finished research project on..</p>
-            </div>
-        </div>
-</div>
-<div class="text-center mt-4"></div>
-
-
-
-            <div class="text-center mt-4"></div>
-        </div>
-    </section>
-    <section class="text-white bg-primary mb-0" id="about-1"><div class="container">
-    <div class="row">
-        <div class="col-lg-4 col-xl-11 offset-xl-1 ms-auto">
-            <p class="lead">I really appreciate you taking the time to review my portfolio. I hope you enjoyed your time &amp; are inspired to connect with me! Please feel free to download my CV to learn more about my experience, skills, and achievements.</p>
-        </div>
-    </div>
-    <div class="text-center mt-4">
-        <a class="btn btn-outline-light btn-xl" role="button" href="https://drive.google.com/file/d/11l0zD8IEeT25Pi64QPLIeaVT2p_uZ0f0/view?usp=sharing" target="_blank"><i class="fa fa-download me-2"></i><span>Download CV</span></a>
-    </div>
-</div></section>
-    <section id="contact">
-        <div class="container">
-            <h2 class="text-uppercase text-center text-secondary mb-0">Contact Me</h2>
-            <hr class="star-dark mb-5">
-            <div class="row">
-                <div class="col-lg-8 mx-auto">
-                    <form id="contactForm" name="sentMessage">
-                        <div class="control-group">
-                            <div class="mb-0 form-floating controls pb-2"><input class="form-control" type="text" id="name" required="" placeholder="Name"><label class="form-label">Name</label><small class="form-text text-danger help-block"></small></div>
-                        </div>
-                        <div class="control-group">
-                            <div class="mb-0 form-floating controls pb-2"><input class="form-control" type="email" id="email" required="" placeholder="Email Address"><label class="form-label">Email Address</label><small class="form-text text-danger help-block"></small></div>
-                        </div>
-                        <div class="control-group">
-                            <div class="mb-0 form-floating controls pb-2"><input class="form-control" type="tel" id="phone" required="" placeholder="Phone Number"><label class="form-label">Phone Number</label><small class="form-text text-danger help-block"></small></div>
-                        </div>
-                        <div class="control-group">
-                            <div class="mb-5 form-floating controls pb-2"><textarea class="form-control" id="message" required="" placeholder="Message" style="height: 150px;"></textarea><label class="form-label">Message</label><small class="form-text text-danger help-block"></small></div>
-                        </div>
-                        <div id="success"></div>
-                        <div><button class="btn btn-primary btn-xl" id="sendMessageButton" type="submit">Send</button></div>
-                    </form>
+    <main>
+        <!-- ============ HERO ============ -->
+        <section class="hero" aria-label="Introduction">
+            <div class="hero-inner">
+                <p class="hero-kicker">Ann Arbor, MI · eCommerce Personalization at Scale</p>
+                <h1>Parker Moesta<span class="accent-dot">.</span></h1>
+                <p class="hero-role">Senior Machine Learning Scientist <span class="role-at">·</span> Domino's</p>
+                <p class="hero-rotator" aria-live="polite">
+                    <span id="rotating-text">I build ML systems that decide what millions of customers see — and prove the revenue they drive.</span>
+                </p>
+                <div class="hero-cta">
+                    <a class="btn btn-solid" href="#work">View the work</a>
+                    <a class="btn btn-ghost" href="assets/Parker_Moesta_Resume.pdf" target="_blank" rel="noopener">Résumé (PDF)</a>
                 </div>
             </div>
-        </div>
-    </section>
-    <footer class="text-center footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4 mb-5 mb-lg-0">
-                    <h4 class="text-uppercase mb-4">Location &amp; Contact&nbsp;</h4>
-                    <p>Ann Arbor, Michigan<br>parkermoesta@gmail.com<br>(313) - 397 - 5184</p>
-                </div><div class="col-md-4 mb-5 mb-lg-0">
-    <h4 class="text-uppercase">Let&#39;s Connect</h4>
-    <ul class="list-inline">
-        <li class="list-inline-item"><a class="btn btn-outline-light text-center btn-social rounded-circle" role="button" href="https://github.com/DimensionDweller"><i class="fa fa-github fa-fw"></i></a></li>
-        <li class="list-inline-item"><a class="btn btn-outline-light text-center btn-social rounded-circle" role="button" href="https://medium.com/@parkermo_86729"><i class="fa fa-medium text-light"></i></a></li>
-        <li class="list-inline-item"><a class="btn btn-outline-light text-center btn-social rounded-circle" role="button" href="https://www.linkedin.com/in/parker-moesta/"><i class="fa fa-linkedin-square text-light"></i></a></li>
-        <li class="list-inline-item"><a class="btn btn-outline-light text-center btn-social rounded-circle" role="button" href="https://www.kaggle.com/parkermoesta"><i class="fab fa-kaggle text-light"></i></a></li>
-    </ul>
-</div>
-                <div class="col-md-4">
-                    <h4 class="text-uppercase mb-4">Thanks again for Visiting</h4>
-                    <p class="lead mb-0"><span>Friendly reminder to be kind to others, do more Data Science for Social Good, and have fun while doing it all! :)&nbsp;</span></p>
+
+            <div class="hero-scene" aria-hidden="true">
+                <svg class="scene" viewBox="0 0 1440 460" preserveAspectRatio="xMidYMax slice" role="presentation">
+                    <defs>
+                        <symbol id="pine" viewBox="0 0 40 62">
+                            <path d="M20 0 L31 20 H25 L35 38 H27 L38 56 H22 V62 H18 V56 H2 L13 38 H5 L15 20 H9 Z"/>
+                        </symbol>
+                        <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+                            <stop offset="0%" stop-color="var(--halo)" stop-opacity=".9"/>
+                            <stop offset="100%" stop-color="var(--halo)" stop-opacity="0"/>
+                        </radialGradient>
+                    </defs>
+
+                    <g class="stars">
+                        <circle cx="120" cy="60" r="1.6"/><circle cx="310" cy="110" r="1.2"/><circle cx="480" cy="40" r="1.8"/>
+                        <circle cx="640" cy="130" r="1.1"/><circle cx="820" cy="70" r="1.5"/><circle cx="1010" cy="45" r="1.3"/>
+                        <circle cx="1180" cy="115" r="1.7"/><circle cx="1340" cy="65" r="1.2"/><circle cx="920" cy="160" r="1"/>
+                        <circle cx="220" cy="170" r="1"/><circle cx="1265" cy="175" r="1.1"/><circle cx="555" cy="185" r="1.2"/>
+                    </g>
+
+                    <circle class="orb-halo" cx="1130" cy="120" r="108" fill="url(#glow)"/>
+                    <circle class="orb" cx="1130" cy="120" r="42"/>
+                    <g class="orb-craters">
+                        <circle cx="1116" cy="108" r="7"/>
+                        <circle cx="1141" cy="130" r="5"/>
+                        <circle cx="1128" cy="94" r="3.5"/>
+                    </g>
+
+                    <g class="ridge ridge-far" data-depth="0.12">
+                        <path d="M0 300 L110 232 L230 286 L370 196 L500 272 L640 208 L790 284 L930 214 L1080 278 L1210 226 L1330 268 L1440 230 V460 H0 Z"/>
+                    </g>
+                    <g class="ridge ridge-mid" data-depth="0.24">
+                        <path d="M0 342 L140 268 L260 322 L420 238 L560 316 L700 258 L860 326 L1000 252 L1150 322 L1290 272 L1440 330 V460 H0 Z"/>
+                    </g>
+                    <g class="ridge ridge-near" data-depth="0.4">
+                        <path d="M0 392 L120 330 L250 372 L400 302 L540 368 L690 318 L850 380 L990 316 L1140 374 L1280 330 L1440 384 V460 H0 Z"/>
+                    </g>
+                    <g class="treeline" data-depth="0.55">
+                        <use href="#pine" x="30" y="368" width="42" height="66"/>
+                        <use href="#pine" x="120" y="382" width="34" height="54"/>
+                        <use href="#pine" x="205" y="370" width="46" height="72"/>
+                        <use href="#pine" x="330" y="384" width="36" height="58"/>
+                        <use href="#pine" x="430" y="372" width="44" height="68"/>
+                        <use href="#pine" x="545" y="386" width="32" height="52"/>
+                        <use href="#pine" x="640" y="370" width="46" height="72"/>
+                        <use href="#pine" x="760" y="384" width="36" height="56"/>
+                        <use href="#pine" x="870" y="372" width="42" height="66"/>
+                        <use href="#pine" x="985" y="386" width="32" height="52"/>
+                        <use href="#pine" x="1080" y="370" width="46" height="72"/>
+                        <use href="#pine" x="1205" y="384" width="36" height="58"/>
+                        <use href="#pine" x="1310" y="372" width="44" height="68"/>
+                        <use href="#pine" x="1405" y="386" width="34" height="54"/>
+                        <path d="M0 432 H1440 V460 H0 Z"/>
+                    </g>
+                </svg>
+            </div>
+        </section>
+
+        <!-- ============ WORK ============ -->
+        <section class="section" id="work">
+            <div class="container">
+                <p class="section-kicker">Selected Projects</p>
+                <h2 class="section-title">The Work</h2>
+                <p class="section-lede">Independent research and builds — recommenders, generative models, NLP, and analysis. Every card links to the source.</p>
+
+                <div class="filters" role="group" aria-label="Filter projects">
+                    <button class="chip is-active" data-filter="all">All</button>
+                    <button class="chip" data-filter="recsys">Recommenders</button>
+                    <button class="chip" data-filter="generative">Generative</button>
+                    <button class="chip" data-filter="nlp">NLP</button>
+                    <button class="chip" data-filter="analysis">Analysis &amp; Viz</button>
+                </div>
+
+                <div class="project-grid">
+                    <article class="project-card reveal" data-category="recsys">
+                        <button class="card-trigger" data-dialog="dlg-steam">
+                            <div class="card-media"><img src="assets/img/ncf-framework.webp" alt="Neural Collaborative Filtering architecture diagram" loading="lazy" width="640" height="637"></div>
+                            <div class="card-body">
+                                <span class="card-tag">Recommenders</span>
+                                <h3>Steam Game Recommender — Neural Collaborative Filtering</h3>
+                                <p>Personalized game recommendations trained on implicit playtime signals.</p>
+                            </div>
+                        </button>
+                    </article>
+
+                    <article class="project-card reveal" data-category="generative">
+                        <button class="card-trigger" data-dialog="dlg-nst">
+                            <div class="card-media"><img src="assets/img/nst.webp" alt="Neural style transfer output of a teddy bear" loading="lazy" width="400" height="400"></div>
+                            <div class="card-body">
+                                <span class="card-tag">Generative</span>
+                                <h3>Neural Style Transfer</h3>
+                                <p>VGG19-based style transfer preserving content while repainting style.</p>
+                            </div>
+                        </button>
+                    </article>
+
+                    <article class="project-card reveal" data-category="generative">
+                        <button class="card-trigger" data-dialog="dlg-vae">
+                            <div class="card-media"><img src="assets/img/vae-faces.webp" alt="Grid of novel faces generated by a VAE" loading="lazy" width="900" height="446"></div>
+                            <div class="card-body">
+                                <span class="card-tag">Generative</span>
+                                <h3>Novel Face Generation — VAE</h3>
+                                <p>Variational autoencoder on CelebA with latent-space arithmetic.</p>
+                            </div>
+                        </button>
+                    </article>
+
+                    <article class="project-card reveal" data-category="generative">
+                        <button class="card-trigger" data-dialog="dlg-wgan">
+                            <div class="card-media"><img src="assets/img/gan-arch.webp" alt="Conditional WGAN-GP architecture diagram" loading="lazy" width="900" height="391"></div>
+                            <div class="card-body">
+                                <span class="card-tag">Generative</span>
+                                <h3>Conditional WGAN-GP</h3>
+                                <p>Wasserstein GAN with gradient penalty for class-conditioned animal faces.</p>
+                            </div>
+                        </button>
+                    </article>
+
+                    <article class="project-card reveal" data-category="generative">
+                        <button class="card-trigger" data-dialog="dlg-pix2pix">
+                            <div class="card-media"><img src="assets/img/pix2pix-house.webp" alt="Colorized historical photo of a house" loading="lazy" width="256" height="256"></div>
+                            <div class="card-body">
+                                <span class="card-tag">Generative</span>
+                                <h3>pix2pix — Colorizing Historical Archives</h3>
+                                <p>UNet + PatchGAN image-to-image translation on historical photos of Ann Arbor.</p>
+                            </div>
+                        </button>
+                    </article>
+
+                    <article class="project-card reveal" data-category="generative">
+                        <button class="card-trigger" data-dialog="dlg-lstm">
+                            <div class="card-media"><img src="assets/img/lstm-arch.webp" alt="LSTM network architecture diagram" loading="lazy" width="900" height="754"></div>
+                            <div class="card-body">
+                                <span class="card-tag">Generative</span>
+                                <h3>Novel Recipe Generator — LSTM</h3>
+                                <p>Character-level sequence model that invents complete, plausible recipes.</p>
+                            </div>
+                        </button>
+                    </article>
+
+                    <article class="project-card reveal" data-category="nlp">
+                        <button class="card-trigger" data-dialog="dlg-sentiment">
+                            <div class="card-media"><img src="assets/img/wordcloud-news.webp" alt="Word cloud built from climate news articles" loading="lazy" width="900" height="472"></div>
+                            <div class="card-body">
+                                <span class="card-tag">NLP</span>
+                                <h3>BERT Sentiment Analysis of News Coverage</h3>
+                                <p>Scraping, preprocessing, and transformer-based sentiment across outlets.</p>
+                            </div>
+                        </button>
+                    </article>
+
+                    <article class="project-card reveal" data-category="nlp">
+                        <button class="card-trigger" data-dialog="dlg-classifier">
+                            <div class="card-media"><img src="assets/img/news-classifier-acc.webp" alt="Training accuracy curve for the news source classifier" loading="lazy" width="550" height="400"></div>
+                            <div class="card-body">
+                                <span class="card-tag">NLP</span>
+                                <h3>News Source Classifier — Fine-tuned BERT</h3>
+                                <p>Predicts an article's outlet from its text at 95% accuracy.</p>
+                            </div>
+                        </button>
+                    </article>
+
+                    <article class="project-card reveal" data-category="nlp">
+                        <button class="card-trigger" data-dialog="dlg-word2vec">
+                            <div class="card-media"><img src="assets/img/embeddings.webp" alt="t-SNE projection of word embeddings" loading="lazy" width="800" height="500"></div>
+                            <div class="card-body">
+                                <span class="card-tag">NLP</span>
+                                <h3>Word2Vec + t-SNE — Semantics of the News</h3>
+                                <p>Comparing embedding geometry across news sources, visually.</p>
+                            </div>
+                        </button>
+                    </article>
+
+                    <article class="project-card reveal" data-category="analysis">
+                        <button class="card-trigger" data-dialog="dlg-pytorch">
+                            <div class="card-media"><img src="assets/img/pytorch-network.webp" alt="Citation network graph of PyTorch research" loading="lazy" width="900" height="667"></div>
+                            <div class="card-body">
+                                <span class="card-tag">Analysis &amp; Viz</span>
+                                <h3>PyTorch Research Network Dynamics</h3>
+                                <p>Citation and co-authorship network analysis of the PyTorch ecosystem.</p>
+                            </div>
+                        </button>
+                    </article>
+
+                    <article class="project-card reveal" data-category="analysis">
+                        <button class="card-trigger" data-dialog="dlg-climate">
+                            <div class="card-media"><img src="assets/img/gdp-growth.webp" alt="GDP growth chart from the climate finance study" loading="lazy" width="900" height="452"></div>
+                            <div class="card-body">
+                                <span class="card-tag">Analysis &amp; Viz</span>
+                                <h3>Climate Finance &amp; CO₂–Growth Decoupling</h3>
+                                <p>Do climate investments help economies grow while emissions fall?</p>
+                            </div>
+                        </button>
+                    </article>
+
+                    <article class="project-card reveal" data-category="analysis">
+                        <button class="card-trigger" data-dialog="dlg-mountains">
+                            <div class="card-media"><img src="assets/img/mountain-viz.webp" alt="Interactive map of a North Cascades backpacking route" loading="lazy" width="900" height="443"></div>
+                            <div class="card-body">
+                                <span class="card-tag">Analysis &amp; Viz</span>
+                                <h3>A Visual Journey Through the North Cascades</h3>
+                                <p>Apple Watch GPS + photo metadata rendered as an interactive route map.</p>
+                            </div>
+                        </button>
+                    </article>
                 </div>
             </div>
+        </section>
+
+        <!-- ============ JOURNEY ============ -->
+        <section class="section section-alt" id="journey">
+            <div class="container">
+                <p class="section-kicker">Milestones</p>
+                <h2 class="section-title">The Journey</h2>
+                <p class="section-lede">From economics to enterprise tech to owning production ML architecture — the short version.</p>
+
+                <ol class="timeline">
+                    <li class="timeline-item reveal">
+                        <div class="timeline-year">2016</div>
+                        <div class="timeline-card">
+                            <h3>Economics → Enterprise Tech</h3>
+                            <p>Graduated from the University of Michigan and joined Oracle in Boston. Led a chatbot proof-of-concept for a major retail partner that cut support-center volume by 25% — an early lesson in what shipping intelligence into a business actually takes.</p>
+                        </div>
+                    </li>
+                    <li class="timeline-item reveal">
+                        <div class="timeline-year">2018–20</div>
+                        <div class="timeline-card">
+                            <h3>The Pivot</h3>
+                            <p>Returned to Michigan and rebuilt my toolkit from the ground up — Python, statistics, and the math underneath. Co-authored peer-reviewed simulation research (IEOM 2021) along the way.</p>
+                        </div>
+                    </li>
+                    <li class="timeline-item reveal">
+                        <div class="timeline-year">2020–23</div>
+                        <div class="timeline-card">
+                            <h3>First Production Recommender · Coupa Software</h3>
+                            <p>Engineered an SVD collaborative-filtering system surfacing personalized product add-ons — contributing to $50M in incremental revenue — and prototyped a RAG-architecture Q&amp;A assistant before "RAG" was a household term.</p>
+                        </div>
+                    </li>
+                    <li class="timeline-item reveal">
+                        <div class="timeline-year">2024</div>
+                        <div class="timeline-card">
+                            <h3>M.S. Data Science · University of Michigan</h3>
+                            <p>Completed the master's (3.95 GPA) while working — deep learning research years spanning generative models, NLP, and computer vision. Most of the projects above were born here.</p>
+                        </div>
+                    </li>
+                    <li class="timeline-item reveal">
+                        <div class="timeline-year">2023–24</div>
+                        <div class="timeline-card">
+                            <h3>Experimentation at National Scale · Domino's</h3>
+                            <p>Joined the Digital Experience team owning causal inference and A/B testing across national web and mobile channels. Shipped a deep-learning cart-abandonment model driving a 6% reduction, validated against holdout controls.</p>
+                        </div>
+                    </li>
+                    <li class="timeline-item reveal">
+                        <div class="timeline-year">2025</div>
+                        <div class="timeline-card">
+                            <h3>Building the Personalization Foundation</h3>
+                            <p>Led the Customer-360 feature store — a distributed Spark platform turning 1B+ records into 400+ features powering 12+ production models — and built the company's first production recommender systems, attributed to $30M in annual incremental revenue. Podium finish at the Databricks Global GenAI Hackathon.</p>
+                        </div>
+                    </li>
+                    <li class="timeline-item reveal">
+                        <div class="timeline-year">2026</div>
+                        <div class="timeline-card">
+                            <h3>Senior Machine Learning Scientist</h3>
+                            <p>Now owning applied ML and production architecture for eCommerce personalization end-to-end: candidate generation, ranking, low-latency serving, and the experimentation loops that prove what works — from research idea to system running at scale.</p>
+                        </div>
+                    </li>
+                </ol>
+            </div>
+        </section>
+
+        <!-- ============ ABOUT ============ -->
+        <section class="section" id="about">
+            <div class="container about-grid">
+                <div class="about-photo reveal">
+                    <img src="assets/img/profile.webp" alt="Parker Moesta outdoors on a tree-lined trail" width="700" height="700" loading="lazy">
+                </div>
+                <div class="about-text">
+                    <p class="section-kicker">About</p>
+                    <h2 class="section-title">Business problem first.<br>Research second. Production always.</h2>
+                    <p>I'm a Senior Machine Learning Scientist at Domino's, where I lead applied ML and production architecture for eCommerce personalization — the systems that decide, in real time, what millions of customers see. My work spans the full stack of modern ML: distributed feature engineering over billions of records, two-stage recommender systems, transformer-based sequence models, and the experimentation and causal-inference discipline to prove what actually moved the needle.</p>
+                    <p>Detroit-born, Ann Arbor-based. I came to ML through economics and enterprise tech, and that path shaped how I operate. When I'm not shipping models, I'm in the mountains — or teaching a neural net to write recipes.</p>
+                    <dl class="facts">
+                        <div><dt>Now</dt><dd>Senior ML Scientist · Domino's</dd></div>
+                        <div><dt>Focus</dt><dd>RecSys · Experimentation · Production ML</dd></div>
+                        <div><dt>Education</dt><dd>M.S. Data Science &amp; B.A. Economics · University of Michigan</dd></div>
+                        <div><dt>Previously</dt><dd>Coupa Software · Oracle</dd></div>
+                        <div><dt>Published</dt><dd>IEOM 2021 · Featured in a Databricks technical blog</dd></div>
+                    </dl>
+                    <a class="btn btn-ghost" href="assets/Parker_Moesta_Resume.pdf" target="_blank" rel="noopener">Download résumé</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ CONTACT ============ -->
+        <section class="section section-alt contact" id="contact">
+            <div class="container">
+                <p class="section-kicker">Contact</p>
+                <h2 class="section-title">Let's build something that moves the needle.</h2>
+                <p class="section-lede">The fastest route is email — I read everything.</p>
+                <div class="contact-cta">
+                    <a class="btn btn-solid btn-lg" href="mailto:parkermoesta@gmail.com">parkermoesta@gmail.com</a>
+                </div>
+                <ul class="contact-links">
+                    <li><a href="https://www.linkedin.com/in/parker-moesta/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+                    <li><a href="https://github.com/DimensionDweller" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+                    <li><a href="https://medium.com/@parkermo_86729" target="_blank" rel="noopener noreferrer">Medium</a></li>
+                    <li><a href="https://www.kaggle.com/parkermoesta" target="_blank" rel="noopener noreferrer">Kaggle</a></li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <p>Ann Arbor, Michigan · <a href="mailto:parkermoesta@gmail.com">parkermoesta@gmail.com</a> · (313) 397-5184</p>
+            <p class="footer-note">Be kind, do more data science for social good, and have fun doing it.</p>
+            <p class="footer-copy">© <span id="year">2026</span> Parker Moesta</p>
         </div>
     </footer>
-    <div class="text-center text-white copyright py-4">
-        <div class="container"><small>Copyright ©&nbsp;Parker Portfolio V2 2023</small></div>
-    </div>
-    <div class="d-lg-none scroll-to-top position-fixed rounded"><a class="text-center d-block rounded text-white" href="#page-top"><i class="fa fa-chevron-up"></i></a></div>
-    <div class="modal text-center" role="dialog" tabindex="-1" id="portfolio-modal-1">
-        <div class="modal-dialog modal-lg" role="document">
-            <div class="modal-content">
-                <div class="modal-header"><button class="btn-close" type="button" aria-label="Close" data-bs-dismiss="modal"></button></div>
-                <div class="modal-body">
-                    <div class="container text-center">
-                        <div class="row">
-                            <div class="col-lg-8 mx-auto">
-                                <h2 class="text-uppercase text-secondary mb-0">Neural Style Transfer</h2>
-                                <hr class="star-dark mb-5"><img class="img-fluid mb-5" src="assets/img/Teddy_NST.png">
-                                <p class="mb-5"><span style="color: rgb(31, 35, 40);">This project showcases a Neural Style Transfer model built on top of the VGG19 architecture, trained to apply the style of a given image to another while preserving the content of the original image.</span></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="modal-footer pb-5"><a class="btn btn-primary btn-lg mx-auto rounded-pill portfolio-modal-dismiss" role="button" href="https://github.com/DimensionDweller/Neural_Style_Transfer"><i class="fa fa-github fs-1 text-start pe-xl-0" style="font-size: 30px;"></i>&nbsp;Link to Project</a></div>
-            </div>
+
+    <!-- ============ PROJECT DIALOGS ============ -->
+    <dialog class="project-dialog" id="dlg-steam" aria-labelledby="dlg-steam-title">
+        <button class="dialog-close" data-close aria-label="Close">&times;</button>
+        <img src="assets/img/ncf-framework.webp" alt="Neural Collaborative Filtering framework" loading="lazy">
+        <h3 id="dlg-steam-title">Steam Game Recommender — Neural Collaborative Filtering</h3>
+        <p>A personalized game recommendation system for Steam users built on Neural Collaborative Filtering, trained on user–item interactions with playtime as an implicit preference signal.</p>
+        <div class="dialog-links">
+            <a class="btn btn-solid" href="https://huggingface.co/spaces/DimensionDweller/Steam_recsys" target="_blank" rel="noopener noreferrer">Live demo</a>
+            <a class="btn btn-ghost" href="https://github.com/parkermoe/steam_recommendation_system" target="_blank" rel="noopener noreferrer">GitHub</a>
         </div>
-    </div>
-    <div class="modal text-center" role="dialog" tabindex="-1" id="portfolio-modal-2">
-        <div class="modal-dialog modal-lg" role="document">
-            <div class="modal-content">
-                <div class="modal-header"><button class="btn-close" type="button" aria-label="Close" data-bs-dismiss="modal"></button></div>
-                <div class="modal-body">
-                    <div class="container text-center">
-                        <div class="row">
-                            <div class="col-lg-8 mx-auto">
-                                <h2 class="text-uppercase text-secondary mb-0">Novel Face Generation &amp; Manipulation - Variational auto encoder (VAE) Implimentation</h2>
-                                <hr class="star-dark mb-5"><img class="img-fluid mb-5" src="assets/img/VAE_Faces.png">
-                                <p class="mb-5"><span style="color: rgb(9, 8, 8); background-color: rgb(255, 255, 255);">This project presents a Variational Autoencoder (VAE) trained on the CelebA dataset for 50 epochs. The model can generate novel images of faces, demonstrating impressive results. Two additional features are also provided: a function to display the distribution of the latent space variables and another to manipulate novel images by performing arithmetic in the latent space.</span></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="modal-footer pb-5"><a class="btn btn-primary btn-lg mx-auto rounded-pill portfolio-modal-dismiss" role="button" href="https://github.com/DimensionDweller/VAE_Implimentation"><i class="fa fa-github fs-1 text-start pe-xl-0" style="font-size: 30px;"></i>&nbsp;Link to Project</a></div>
-            </div>
+    </dialog>
+
+    <dialog class="project-dialog" id="dlg-nst" aria-labelledby="dlg-nst-title">
+        <button class="dialog-close" data-close aria-label="Close">&times;</button>
+        <img src="assets/img/nst.webp" alt="Neural style transfer result" loading="lazy">
+        <h3 id="dlg-nst-title">Neural Style Transfer</h3>
+        <p>A Neural Style Transfer model built on the VGG19 architecture, trained to apply the style of one image to another while preserving the original content.</p>
+        <div class="dialog-links">
+            <a class="btn btn-ghost" href="https://github.com/DimensionDweller/Neural_Style_Transfer" target="_blank" rel="noopener noreferrer">GitHub</a>
         </div>
-    </div>
-    <div class="modal text-center" role="dialog" tabindex="-1" id="portfolio-modal-3">
-        <div class="modal-dialog modal-lg" role="document">
-            <div class="modal-content">
-                <div class="modal-header"><button class="btn-close" type="button" aria-label="Close" data-bs-dismiss="modal"></button></div>
-                <div class="modal-body">
-                    <div class="container text-center">
-                        <div class="row">
-                            <div class="col-lg-8 mx-auto">
-                                <h5 class="text-uppercase text-secondary mb-0">An Investigation into the relationship between climate-related financing and the decoupling of c02 emissions &amp; economic growth</h5>
-                                <hr class="star-dark mb-5"><img class="img-fluid mb-5" src="assets/img/CO2%20Change%20Rate.png">
-                                <p class="mb-5">Given that the amount of investments into developing countries to<br>help accelerate their decoupling journey is significant, our team<br>wanted to investigate these financial flows and try to determine if<br>these investments have helped countries lower emissions, all while<br>still maintaining or growing their economy.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="modal-footer pb-5"><a class="btn btn-primary btn-lg mx-auto rounded-pill portfolio-modal-dismiss" role="button" href="https://drive.google.com/file/d/1ct1VfKy0HfxNS4meNwejg42FOz34fbH5/view?usp=share_link"><i class="fa fa-file-powerpoint-o fs-1 text-start pe-xl-0" style="font-size: 30px;"></i>&nbsp;Link to Project</a></div>
-            </div>
+    </dialog>
+
+    <dialog class="project-dialog" id="dlg-vae" aria-labelledby="dlg-vae-title">
+        <button class="dialog-close" data-close aria-label="Close">&times;</button>
+        <img src="assets/img/vae-faces.webp" alt="Faces generated by the VAE" loading="lazy">
+        <h3 id="dlg-vae-title">Novel Face Generation — Variational Autoencoder</h3>
+        <p>A VAE trained on CelebA for 50 epochs that generates novel faces, visualizes the latent-space distribution, and manipulates generated images through latent arithmetic.</p>
+        <div class="dialog-links">
+            <a class="btn btn-ghost" href="https://github.com/DimensionDweller/VAE_Implimentation" target="_blank" rel="noopener noreferrer">GitHub</a>
         </div>
-    </div>
-    <div class="modal text-center" role="dialog" tabindex="-1" id="portfolio-modal-6">
-        <div class="modal-dialog modal-lg" role="document">
-            <div class="modal-content">
-                <div class="modal-header"><button class="btn-close" type="button" aria-label="Close" data-bs-dismiss="modal"></button></div>
-                <div class="modal-body">
-                    <div class="container text-center">
-                        <div class="row">
-                            <div class="col-lg-8 mx-auto">
-                                <h5 class="text-uppercase text-secondary mb-0"><strong><span style="color: rgb(36, 36, 36);">Concocting a BERT(iful) Soup For Sentiment Analysis of News Sources</span></strong></h5>
-                                <hr class="star-dark mb-5"><img class="img-fluid mb-5" src="assets/img/portfolio/NLP/Word_cloud_news.png">
-                                <p class="mb-5"><span style="color: rgb(31, 35, 40);">This project is a robust and insightful sentiment analysis tool developed using Python. Its core function is to analyze and visualize the sentiment of news articles associated with climate change. Leveraging the NewsAPI for data retrieval, NLTK for preprocessing, and the transformer library with a pretrained BERT model for sentiment analysis, this project uncovers trends and insights in climate change reporting across various news sources. The visualizations are brought to life using Matplotlib, Plotly, and Wordcloud, offering an engaging representation of the sentiment data.</span></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="modal-footer pb-5"></a>
-    <a class="btn btn-secondary btn-lg mx-auto rounded-pill portfolio-modal-dismiss" role="button" href="https://medium.com/@parkermo_86729/concocting-a-bert-soup-for-sentiment-analysis-of-news-sources-1de0ab64d1ff">
-        <i class="fab fa-medium fs-1 text-start pe-xl-0" style="font-size: 30px;"></i> Read on Medium
-    </a><a class="btn btn-primary btn-lg mx-auto rounded-pill portfolio-modal-dismiss" role="button" href="https://github.com/DimensionDweller/news_sentiment_analysis_viz"><i class="fa fa-github fs-1 text-start pe-xl-0" style="font-size: 30px;"></i>&nbsp;Link to Project</a></div>
-            </div>
+    </dialog>
+
+    <dialog class="project-dialog" id="dlg-wgan" aria-labelledby="dlg-wgan-title">
+        <button class="dialog-close" data-close aria-label="Close">&times;</button>
+        <img src="assets/img/gan-arch.webp" alt="WGAN-GP architecture" loading="lazy">
+        <h3 id="dlg-wgan-title">Conditional WGAN-GP for Animal Face Generation</h3>
+        <p>A Conditional Wasserstein GAN with gradient penalty trained on an animal-faces dataset, generating class-conditioned novel animal faces.</p>
+        <div class="dialog-links">
+            <a class="btn btn-ghost" href="https://github.com/DimensionDweller/Conditional_WGAN-CP_Implimentation" target="_blank" rel="noopener noreferrer">GitHub</a>
         </div>
-    </div>
-    <div class="modal text-center" role="dialog" tabindex="-1" id="portfolio-modal-7">
-        <div class="modal-dialog modal-lg" role="document">
-            <div class="modal-content">
-                <div class="modal-header"><button class="btn-close" type="button" aria-label="Close" data-bs-dismiss="modal"></button></div>
-                <div class="modal-body">
-                    <div class="container text-center">
-                        <div class="row">
-                            <div class="col-lg-8 mx-auto">
-                                <h5 class="text-uppercase text-secondary mb-0">Using Pytorch, Hugging Face, and a Pre-trained BERT Model to Create News Source Classifier: A Step-by-Step Deep-Learning Approach</h5>
-                                <hr class="star-dark mb-5"><img class="img-fluid mb-5" src="assets/img/portfolio/NLP/bert_classifier.png">
-                                <p class="mb-5">his project aims to create a classifier that can predict the source of a news article given the content of the article. The sources of news we are considering are CNN, Fox News, MSNBC, and Breitbart. I utilize a pre-trained BERT model to extract features from the articles and perform the classification. After 10 epochs of training, the model achieved an accuracy of 0.9514 with a loss of 0.1718.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="modal-footer pb-5"></a>
-    <a class="btn btn-secondary btn-lg mx-auto rounded-pill portfolio-modal-dismiss" role="button" href="https://medium.com/@parkermo_86729/using-pytorch-hugging-face-and-a-pretrained-bert-model-to-create-news-source-classifier-a-46dddbd4d919">
-        <i class="fab fa-medium fs-1 text-start pe-xl-0" style="font-size: 30px;"></i> Read on Medium
-    </a><a class="btn btn-primary btn-lg mx-auto rounded-pill portfolio-modal-dismiss" role="button" href="https://github.com/DimensionDweller/news_source_classifer"><i class="fa fa-github fs-1 text-start pe-xl-0" style="font-size: 30px;"></i>&nbsp;Link to Project</a></div>
-            </div>
+    </dialog>
+
+    <dialog class="project-dialog" id="dlg-pix2pix" aria-labelledby="dlg-pix2pix-title">
+        <button class="dialog-close" data-close aria-label="Close">&times;</button>
+        <img src="assets/img/pix2pix-grid.webp" alt="Grid of colorized historical images" loading="lazy">
+        <h3 id="dlg-pix2pix-title">pix2pix — Restoring Color to Historical Archives</h3>
+        <p>Image-to-image translation with a UNet generator and PatchGAN discriminator, trained on paired historical/modern photos to colorize grayscale images of houses around Ann Arbor while preserving texture and detail.</p>
+        <div class="dialog-links">
+            <a class="btn btn-ghost" href="https://github.com/parkermoe/pix2pix_historical_A2_image_restoration" target="_blank" rel="noopener noreferrer">GitHub</a>
         </div>
-    </div>
-    <div class="modal text-center" role="dialog" tabindex="-1" id="portfolio-modal-8">
-        <div class="modal-dialog modal-lg" role="document">
-            <div class="modal-content">
-                <div class="modal-header"><button class="btn-close" type="button" aria-label="Close" data-bs-dismiss="modal"></button></div>
-                <div class="modal-body">
-                    <div class="container text-center">
-                        <div class="row">
-                            <div class="col-lg-8 mx-auto">
-                                <h5 class="text-uppercase text-secondary mb-0">An Investigation into the relationship between climate-related financing and the decoupling of c02 emissions &amp; economic growth</h5>
-                                <hr class="star-dark mb-5"><img class="img-fluid mb-5" src="assets/img/CO2%20Change%20Rate.png">
-                                <p class="mb-5">Given that the amount of investments into developing countries to<br>help accelerate their decoupling journey is significant, our team<br>wanted to investigate these financial flows and try to determine if<br>these investments have helped countries lower emissions, all while<br>still maintaining or growing their economy.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="modal-footer pb-5"><a class="btn btn-primary btn-lg mx-auto rounded-pill portfolio-modal-dismiss" role="button" href="https://drive.google.com/file/d/1ct1VfKy0HfxNS4meNwejg42FOz34fbH5/view?usp=share_link"><i class="fa fa-file-powerpoint-o fs-1 text-start pe-xl-0" style="font-size: 30px;"></i>&nbsp;Link to Project</a></div>
-            </div>
+    </dialog>
+
+    <dialog class="project-dialog" id="dlg-lstm" aria-labelledby="dlg-lstm-title">
+        <button class="dialog-close" data-close aria-label="Close">&times;</button>
+        <img src="assets/img/lstm-arch.webp" alt="LSTM architecture" loading="lazy">
+        <h3 id="dlg-lstm-title">Novel Recipe Generator — LSTM</h3>
+        <p>A Long Short-Term Memory network trained on a large recipe corpus that generates novel, creative recipes — a hands-on study in sequence generation.</p>
+        <div class="dialog-links">
+            <a class="btn btn-solid" href="https://huggingface.co/spaces/DimensionDweller/RecipeGenerator" target="_blank" rel="noopener noreferrer">Try the model</a>
+            <a class="btn btn-ghost" href="https://github.com/DimensionDweller/recipe_generator_LSTM/tree/main" target="_blank" rel="noopener noreferrer">GitHub</a>
         </div>
-    </div>
-    <div class="modal text-center" role="dialog" tabindex="-1" id="portfolio-modal-11">
-        <div class="modal-dialog modal-lg" role="document">
-            <div class="modal-content">
-                <div class="modal-header"><button class="btn-close" type="button" aria-label="Close" data-bs-dismiss="modal"></button></div>
-                <div class="modal-body">
-                    <div class="container text-center">
-                        <div class="row">
-                            <div class="col-lg-8 mx-auto">
-                                <h5 class="text-uppercase text-secondary mb-0">PYtorch Research network dynamics: A citation and co-authorship analysis</h5>
-                                <hr class="star-dark mb-5"><img class="img-fluid mb-5" src="assets/img/pytorch_year_output2.gif">
-                                <p class="mb-5"><span style="color: rgb(55, 65, 81); background-color: rgb(247, 247, 248);">This project employs network analysis techniques to map the evolving landscape of PyTorch-related research, identifying key figures and trends in the community through co-authorship networks. It further explores the academic impact of the original PyTorch paper by constructing a multi-level citation network, providing insights into how the paper has influenced and propagated through the research community.</span></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="modal-footer pb-5"><a class="btn btn-primary btn-lg mx-auto rounded-pill portfolio-modal-dismiss" role="button" href="https://github.com/parkermoe/PyTorch_Research_Network_Analysis/tree/main"><i class="fa fa-file-powerpoint-o fs-1 text-start pe-xl-0" style="font-size: 30px;"></i>&nbsp;Link to Project</a></div>
-            </div>
+    </dialog>
+
+    <dialog class="project-dialog" id="dlg-sentiment" aria-labelledby="dlg-sentiment-title">
+        <button class="dialog-close" data-close aria-label="Close">&times;</button>
+        <img src="assets/img/wordcloud-news.webp" alt="News word cloud" loading="lazy">
+        <h3 id="dlg-sentiment-title">Concocting a BERT(iful) Soup — News Sentiment Analysis</h3>
+        <p>A sentiment-analysis pipeline for climate-change coverage: NewsAPI for retrieval, NLTK preprocessing, a pretrained BERT model for sentiment, and Matplotlib/Plotly/WordCloud visualizations to surface trends across outlets.</p>
+        <div class="dialog-links">
+            <a class="btn btn-solid" href="https://medium.com/@parkermo_86729/concocting-a-bert-soup-for-sentiment-analysis-of-news-sources-1de0ab64d1ff" target="_blank" rel="noopener noreferrer">Read on Medium</a>
+            <a class="btn btn-ghost" href="https://github.com/DimensionDweller/news_sentiment_analysis_viz" target="_blank" rel="noopener noreferrer">GitHub</a>
         </div>
-    </div>
-    <div class="modal text-center" role="dialog" tabindex="-1" id="portfolio-modal-10">
-        <div class="modal-dialog modal-lg" role="document">
-            <div class="modal-content">
-                <div class="modal-header"><button class="btn-close" type="button" aria-label="Close" data-bs-dismiss="modal"></button></div>
-                <div class="modal-body">
-                    <div class="container text-center">
-                        <div class="row">
-                            <div class="col-lg-8 mx-auto">
-                                <h5 class="text-uppercase text-secondary mb-0"><span style="color: rgb(31, 35, 40);">Conditional Wasserstein GAN with Gradient Penalty (WGAN-GP) for Animal Face Generation</span></h5>
-                                <hr class="star-dark mb-5"><img class="img-fluid mb-5" src="assets/img/portfolio/Generative%20Models/GAN_Arch.png">
-                                <p class="mb-5"><span style="color: rgb(31, 35, 40);">This project presents a Conditional Wasserstein Generative Adversarial Network with Gradient Penalty (WGAN-GP), trained on an animal faces dataset for 50 epochs. The model can generate novel images of different animal faces, although admittedly, there is much room for improvement in this model.</span></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="modal-footer pb-5"><a class="btn btn-primary btn-lg mx-auto rounded-pill portfolio-modal-dismiss" role="button" href="https://github.com/DimensionDweller/Conditional_WGAN-CP_Implimentation"><i class="fa fa-github fs-1 text-start pe-xl-0" style="font-size: 30px;"></i>&nbsp;Link to Project</a></div>
-            </div>
+    </dialog>
+
+    <dialog class="project-dialog" id="dlg-classifier" aria-labelledby="dlg-classifier-title">
+        <button class="dialog-close" data-close aria-label="Close">&times;</button>
+        <img src="assets/img/bert-classifier.webp" alt="BERT classifier diagram" loading="lazy">
+        <h3 id="dlg-classifier-title">News Source Classifier — Fine-tuned BERT</h3>
+        <p>A classifier that predicts an article's outlet (CNN, Fox News, MSNBC, Breitbart) from its text using a pretrained BERT backbone — 95.1% accuracy after 10 epochs.</p>
+        <div class="dialog-links">
+            <a class="btn btn-solid" href="https://medium.com/@parkermo_86729/using-pytorch-hugging-face-and-a-pretrained-bert-model-to-create-news-source-classifier-a-46dddbd4d919" target="_blank" rel="noopener noreferrer">Read on Medium</a>
+            <a class="btn btn-ghost" href="https://github.com/DimensionDweller/news_source_classifer" target="_blank" rel="noopener noreferrer">GitHub</a>
         </div>
-    </div>
-    <div class="modal text-center" role="dialog" tabindex="-1" id="portfolio-modal-9">
-        <div class="modal-dialog modal-lg" role="document">
-            <div class="modal-content">
-                <div class="modal-header"><button class="btn-close" type="button" aria-label="Close" data-bs-dismiss="modal"></button></div>
-                <div class="modal-body">
-                    <div class="container text-center">
-                        <div class="row">
-                            <div class="col-lg-8 mx-auto">
-                                <h5 class="text-uppercase text-secondary mb-0">Using LSTM to generate novel cooking recipes</h5>
-                                <hr class="star-dark mb-5"><img class="img-fluid mb-5" src="assets/img/portfolio/Generative%20Models/lstm_arch.png">
-                                <p class="mb-5"><span style="color: rgb(31, 35, 40);">This project presents a Long Short-Term Memory Recurrent Neural Network (LSTM RNN) trained on a large recipe dataset. The model can generate novel, creative recipes, demonstrating the power of RNNs for sequence generation tasks.</span></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="modal-footer pb-5"></a>
-    <a class="btn btn-secondary btn-lg mx-auto rounded-pill portfolio-modal-dismiss" role="button" href="https://huggingface.co/spaces/DimensionDweller/RecipeGenerator">
-        <i class="fas fa-smile" style="font-size: 30px;"></i> Try Model
-    </a>
-<a class="btn btn-primary btn-lg mx-auto rounded-pill portfolio-modal-dismiss" role="button" href="https://github.com/DimensionDweller/recipe_generator_LSTM/tree/main"><i class="fa fa-github fs-1 text-start pe-xl-0" style="font-size: 30px;"></i>&nbsp;Link to Project</a></div>
-            </div>
+    </dialog>
+
+    <dialog class="project-dialog" id="dlg-word2vec" aria-labelledby="dlg-word2vec-title">
+        <button class="dialog-close" data-close aria-label="Close">&times;</button>
+        <img src="assets/img/embeddings.webp" alt="t-SNE embedding projection" loading="lazy">
+        <h3 id="dlg-word2vec-title">Word2Vec + t-SNE — Semantic Geometry of the News</h3>
+        <p>Trains Word2Vec embeddings on articles from different outlets and projects them with t-SNE to visually compare how sources encode meaning around the same topics.</p>
+        <div class="dialog-links">
+            <a class="btn btn-solid" href="https://medium.com/@parkermo_86729/nlp-series-part-2-using-word2vec-word-embeddings-to-explore-semantic-relations-among-new-sources-d91a1371fd08" target="_blank" rel="noopener noreferrer">Read on Medium</a>
+            <a class="btn btn-ghost" href="https://github.com/DimensionDweller/nlp_word_embedding_analysis" target="_blank" rel="noopener noreferrer">GitHub</a>
         </div>
-    </div>
-    <div class="modal text-center" role="dialog" tabindex="-1" id="portfolio-modal-12">
-        <div class="modal-dialog modal-lg" role="document">
-            <div class="modal-content">
-                <div class="modal-header"><button class="btn-close" type="button" aria-label="Close" data-bs-dismiss="modal"></button></div>
-                <div class="modal-body">
-                    <div class="container text-center">
-                        <div class="row">
-                            <div class="col-lg-8 mx-auto">
-                                <h5 class="text-uppercase text-secondary mb-0">Colorizing historical archives using image-to-image translation</h5>
-                                <hr class="star-dark mb-5"><img class="img-fluid mb-5" src="assets/img/visualized_images_grid.png">
-                                <p class="mb-5"><span style="color: rgb(31, 35, 40);">This project presents a novel approach to colorize historical grayscale images, employing a UNet Generator and PatchGAN Discriminator. Trained on pairs of historical and modern images, the model can generate colorized versions of historical images of houses around Ann Arbor, Michigan, preserving intricate textures and details.</span></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="modal-footer pb-5"><a class="btn btn-primary btn-lg mx-auto rounded-pill portfolio-modal-dismiss" role="button" href="https://github.com/parkermoe/pix2pix_historical_A2_image_restoration"><i class="fa fa-github fs-1 text-start pe-xl-0" style="font-size: 30px;"></i>&nbsp;Link to Project</a></div>
-            </div>
+    </dialog>
+
+    <dialog class="project-dialog" id="dlg-pytorch" aria-labelledby="dlg-pytorch-title">
+        <button class="dialog-close" data-close aria-label="Close">&times;</button>
+        <img src="assets/img/pytorch-network-anim.gif" alt="Animated growth of the PyTorch citation network over time" loading="lazy">
+        <h3 id="dlg-pytorch-title">PyTorch Research Network Dynamics</h3>
+        <p>Network analysis mapping the PyTorch research landscape: co-authorship communities, key figures, and a multi-level citation network tracing how the original PyTorch paper propagated through the field.</p>
+        <div class="dialog-links">
+            <a class="btn btn-ghost" href="https://github.com/parkermoe/PyTorch_Research_Network_Analysis/tree/main" target="_blank" rel="noopener noreferrer">GitHub</a>
         </div>
-    </div>
-    <div class="modal text-center" role="dialog" tabindex="-1" id="portfolio-modal-13">
-        <div class="modal-dialog modal-lg" role="document">
-            <div class="modal-content">
-                <div class="modal-header"><button class="btn-close" type="button" aria-label="Close" data-bs-dismiss="modal"></button></div>
-                <div class="modal-body">
-                    <div class="container text-center">
-                        <div class="row">
-                            <div class="col-lg-8 mx-auto">
-                                <h5 class="text-uppercase text-secondary mb-0">Utilizing Apple Watch data to visually present my 5 day backpacking trip through the north cascades</h5>
-                                <hr class="star-dark mb-5"><img class="img-fluid mb-5" src="assets/img/moutain_viz.png">
-                                <p class="mb-5"><span style="color: rgb(31, 35, 40);">This project visualizes your hiking journey using the route data exported from Apple Health and metadata from photos taken along the way. The final output is an interactive map with your route, altitude changes color-coded, and photos placed on their respective geolocations.</span></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="modal-footer pb-5"></a>
-    <a class="btn btn-secondary btn-lg mx-auto rounded-pill portfolio-modal-dismiss" role="button" href="https://645d6ec1cbb79215784d693d--enchanting-palmier-8f33ef.netlify.app">
-        <i class="fas fa-smile" style="font-size: 30px;"></i> Visualize The Journey
-    </a>
-<a class="btn btn-primary btn-lg mx-auto rounded-pill portfolio-modal-dismiss" role="button" href="https://github.com/parkermoe/visual_journey_through_the_mountains"><i class="fa fa-github fs-1 text-start pe-xl-0" style="font-size: 30px;"></i>&nbsp;Link to Project</a></div>
-            </div>
+    </dialog>
+
+    <dialog class="project-dialog" id="dlg-climate" aria-labelledby="dlg-climate-title">
+        <button class="dialog-close" data-close aria-label="Close">&times;</button>
+        <img src="assets/img/co2-change.webp" alt="CO2 change-rate chart" loading="lazy">
+        <h3 id="dlg-climate-title">Climate Finance &amp; the Decoupling of CO₂ from Growth</h3>
+        <p>An econometric investigation of climate-related financial flows into developing countries: have these investments helped nations cut emissions while maintaining economic growth?</p>
+        <div class="dialog-links">
+            <a class="btn btn-ghost" href="https://drive.google.com/file/d/1ct1VfKy0HfxNS4meNwejg42FOz34fbH5/view?usp=share_link" target="_blank" rel="noopener noreferrer">View the study</a>
         </div>
-    </div>
-    <div class="modal text-center" role="dialog" tabindex="-1" id="portfolio-modal-14">
-        <div class="modal-dialog modal-lg" role="document">
-            <div class="modal-content">
-                <div class="modal-header"><button class="btn-close" type="button" aria-label="Close" data-bs-dismiss="modal"></button></div>
-                <div class="modal-body">
-                    <div class="container text-center">
-                        <div class="row">
-                            <div class="col-lg-8 mx-auto">
-                                <h5 class="text-uppercase text-secondary mb-0">Steam Game Recommendation system using neural collaborative filtering</h5>
-                                <hr class="star-dark mb-5"><img class="img-fluid mb-5" src="assets/img/The-overall-framework-of-Neural-Collaborative-Filtering12_W640.jpg">
-                                <p class="mb-5">This project aims to build a personalized game recommendation system for Steam users, employing Neural Collaborative Filtering (NCF) as the underlying algorithm. The model is trained on user-item interactions and leverages playtime as an implicit proxy for user preferences.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="modal-footer pb-5"></a>
-    <a class="btn btn-secondary btn-lg mx-auto rounded-pill portfolio-modal-dismiss" role="button" href="https://huggingface.co/spaces/DimensionDweller/Steam_recsys">
-        <i class="fas fa-smile" style="font-size: 30px;"></i> Demo The Model
-    </a>
-<a class="btn btn-primary btn-lg mx-auto rounded-pill portfolio-modal-dismiss" role="button" href="https://github.com/parkermoe/steam_recommendation_system"><i class="fa fa-github fs-1 text-start pe-xl-0" style="font-size: 30px;"></i>&nbsp;Link to Project</a></div>
-            </div>
+    </dialog>
+
+    <dialog class="project-dialog" id="dlg-mountains" aria-labelledby="dlg-mountains-title">
+        <button class="dialog-close" data-close aria-label="Close">&times;</button>
+        <img src="assets/img/mountain-viz.webp" alt="Interactive route map through the North Cascades" loading="lazy">
+        <h3 id="dlg-mountains-title">A Visual Journey Through the North Cascades</h3>
+        <p>A five-day backpacking route rebuilt as an interactive map from Apple Health GPS exports and photo metadata — altitude color-coded, photos pinned to where they were taken.</p>
+        <div class="dialog-links">
+            <a class="btn btn-solid" href="https://645d6ec1cbb79215784d693d--enchanting-palmier-8f33ef.netlify.app" target="_blank" rel="noopener noreferrer">Explore the map</a>
+            <a class="btn btn-ghost" href="https://github.com/parkermoe/visual_journey_through_the_mountains" target="_blank" rel="noopener noreferrer">GitHub</a>
         </div>
-    </div><div id="portfolio-modal-5" class="modal text-center" role="dialog" tabindex="-1">
-    <div class="modal-dialog modal-lg" role="document">
-        <div class="modal-content">
-            <div class="modal-header"><button class="btn-close" type="button" aria-label="Close" data-bs-dismiss="modal"></button></div>
-            <div class="modal-body">
-                <div class="container text-center">
-                    <div class="row">
-                        <div class="col-lg-8 mx-auto">
-                            <h2 class="text-uppercase text-secondary mb-0">Using Word2Vec Word Embeddings and t-SNE to Visually Explore Semantic Relations Among Words in New Articles</h2>
-                            <hr class="star-dark mb-5" /><img class="img-fluid mb-5" src="assets/img/portfolio/NLP/embeddings_init.png" />
-                            <p class="mb-5"><span style="color: rgb(9, 8, 8); background-color: rgb(255, 255, 255);">This project represents a sophisticated exploration into the realm of Natural Language Processing (NLP), employing Word2Vec embeddings and t-SNE to perform comparative analysis of news articles from different sources.</span></p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="modal-footer pb-5">
-    <a class="btn btn-primary btn-lg mx-auto rounded-pill portfolio-modal-dismiss" role="button" href="https://github.com/DimensionDweller/nlp_word_embedding_analysis">
-        <i class="fa fa-github fs-1 text-start pe-xl-0" style="font-size: 30px;"></i> Link to Project
-    </a>
-    <a class="btn btn-secondary btn-lg mx-auto rounded-pill portfolio-modal-dismiss" role="button" href="https://medium.com/@parkermo_86729/nlp-series-part-2-using-word2vec-word-embeddings-to-explore-semantic-relations-among-new-sources-d91a1371fd08">
-        <i class="fab fa-medium fs-1 text-start pe-xl-0" style="font-size: 30px;"></i> Read on Medium
-    </a>
-</div><div id="portfolio-modal-4" class="modal text-center" role="dialog" tabindex="-1">
-    <div class="modal-dialog modal-lg" role="document">
-        <div class="modal-content">
-            <div class="modal-header"><button class="btn-close" type="button" aria-label="Close" data-bs-dismiss="modal"></button></div>
-            <div class="modal-body">
-                <div class="container text-center">
-                    <div class="row">
-                        <div class="col-lg-8 mx-auto">
-                            <h2 class="text-uppercase text-secondary mb-0">Using Pytorch, Hugging Face, and a Pretrained BERT Model to Create News Source Classifier: A Step-by-Step Deep-Learning Approach</h2>
-                            <hr class="star-dark mb-5" /><img class="img-fluid mb-5" src="assets/img/portfolio/NLP/bert_classifier.png" />
-                            <p class="mb-5"><span style="color: rgb(9, 8, 8); background-color: rgb(255, 255, 255);">This project aims to create a classifier that can predict the source of a news article given the content of the article. The sources of news we are considering are CNN, Fox News, MSNBC, and Breitbart. I utilize a pre-trained BERT model to extract features from the articles and perform the classification. After 10 epochs of training, the model achieved an accuracy of 0.9514 with a loss of 0.1718.</span></p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="modal-footer pb-5">
-    <a class="btn btn-primary btn-lg mx-auto rounded-pill portfolio-modal-dismiss" role="button" href="https://github.com/DimensionDweller/news_source_classifer">
-        <i class="fa fa-github fs-1 text-start pe-xl-0" style="font-size: 30px;"></i> Link to Project
-    </a>
-    <a class="btn btn-secondary btn-lg mx-auto rounded-pill portfolio-modal-dismiss" role="button" href="https://medium.com/@parkermo_86729/using-pytorch-hugging-face-and-a-pretrained-bert-model-to-create-news-source-classifier-a-46dddbd4d919">
-        <i class="fab fa-medium fs-1 text-start pe-xl-0" style="font-size: 30px;"></i> Read on Medium
-    </a>
-</div>
-    <div class="modal text-center" role="dialog" tabindex="-1" id="nlp-modal-sentiment">
-        <div class="modal-dialog modal-lg" role="document">
-            <div class="modal-content">
-                <div class="modal-header"><button class="btn-close" aria-label="Close" data-bs-dismiss="modal" type="button"></button></div>
-                <div class="modal-body">
-                    <div class="container text-center">
-                        <div class="row">
-                            <div class="col-lg-8 mx-auto">
-                                <h2 class="text-uppercase text-secondary mb-0">Beautiful Soup + BERT: Sentiment Analysis of News Articles</h2>
-                                <hr class="star-dark mb-5"><img class="img-fluid mb-5" src="assets/img/portfolio/NLP/Word_cloud_news.png">
-                                <p class="mb-5"><span style="color:rgb(9, 8, 8);background-color:rgb(255, 255, 255);">This project is a robust sentiment analysis tool in Python, analyzing and visualizing climate change news articles. Using NewsAPI for data retrieval, NLTK for preprocessing, and the transformer library with a pretrained BERT model for sentiment analysis, it uncovers trends in climate change reporting. Visualizations are created with Matplotlib, Plotly, and Wordcloud, providing an engaging view of the sentiment data.</span></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="modal-footer pb-5"><a class="btn btn-primary btn-lg mx-auto rounded-pill portfolio-modal-dismiss" role="button" href="https://github.com/DimensionDweller/news_sentiment_analysis_viz/tree/main"><i class="fa fa-github fs-1 text-start pe-xl-0" style="font-size:30px;"></i> Link to Project </a><a class="btn btn-secondary btn-lg mx-auto rounded-pill portfolio-modal-dismiss" role="button" href="https://medium.com/@parkermo_86729/concocting-a-bert-soup-for-sentiment-analysis-of-news-sources-1de0ab64d1ff"><i class="fab fa-medium fs-1 text-start pe-xl-0" style="font-size:30px;"></i> Read on Medium </a></div>
-            </div>
-        </div>
-    </div>
-    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-    <script src="assets/js/aos.min.js"></script>
-    <script src="assets/js/bs-init.js"></script>
-    <script src="assets/js/freelancer.js"></script>
+    </dialog>
+
+    <script src="assets/js/main.js"></script>
 </body>
 
 </html>
