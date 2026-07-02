@@ -45,12 +45,12 @@
   /* ---------- hero milestone rotator ---------- */
 
   var milestones = [
-    "I build ML systems that decide what millions of customers see. Then I prove the revenue.",
-    "One feature platform. 1B+ records. 400+ features. 12+ production models.",
-    "Low-latency recommendation serving for one of the world's largest eCommerce brands.",
-    "Candidate generation → ranking → online experimentation. I own recsys end-to-end.",
-    "Shipped ML tied to $100M+ in measured incremental revenue.",
-    "Off the clock: mountains, trail miles, and teaching neural nets to write recipes."
+    "Shipping end to end recommender systems.",
+    "Retrieval, ranking, and online experimentation.",
+    "Turning raw data into features, and features into product.",
+    "Deep learning, classical ML, and whatever the problem actually needs.",
+    "Experiments first. If it works, the numbers will say so.",
+    "Off the clock, mountains, trail miles, and neural nets that write recipes."
   ];
 
   var rotator = document.getElementById("rotating-text");
